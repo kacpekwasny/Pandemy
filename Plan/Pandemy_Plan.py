@@ -1,4 +1,4 @@
-# Pomysly:
+# Ewentualne Pomysly:
 # 1. Symulator bedzie wielo komputerowy wiec jakas komunikacja
 #   synchronizacja, powalenie trudne!
 #  
