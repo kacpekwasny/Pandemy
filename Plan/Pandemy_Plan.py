@@ -43,11 +43,14 @@
 
 class Simulation:
     def __init__(self, config, default_config):
+        # W taki sposob bedzie zaciagany config
+        # Bedzie config, ktory podajesz oraz wartosc defaultowa
+        #  
         self.config1 = config["config1"] if "config1" in config else default_config["config1"]
         self.config2 = config["config2"] if "config2" in config else default_config["config2"]
         self.config3 = config["config3"] if "config3" in config else default_config["config3"]
-        self.config4 = config["config4"] if "config4" in config else default_config["config4"]
-        self.config5 = config["config5"] if "config5" in config else default_config["config5"]
+        # ...
+
 
     # Przy rozpoczynaniu symulacji
     # beda generowane osoby domy itd
@@ -114,12 +117,11 @@ class Day_Place:
     self.infected       # float() jaka czesc jest zarazona budynku? float = osoby_zarazone/people_ls
     self.time_in_self   # Czas jaki spedza sie w tym miejscu
 
-    def simulation():
-        for i in range(time_in_self):       # W czasie pobytu w miejscu ludzie w tym miejscu ruszaja sie  
-            for human in self.people_ls:
-                human.move(self.mv_space)   # Czlowiek rusza sie w okreslonym miejscu? rozne day place beda mialy rozne simulation
-            # Zalezna od sepcyfikacji
-        pass
+class School:
+    def __init__(self, config):
+        self
+    pass
+
 
 
 class Home:
@@ -173,10 +175,14 @@ class Person:
         self.move(parameter1=xxx, paramter2=y, ...)
     
     def move_drive(self, where = (x, y)):
-        # Road
-        road = [i for i in road_ls if i.Cords_in_cords(self.cords)]
-        self.move(road=road_ls[(x,y)=where], )
-
+        # Po co symlacja 1M osob ktore jezdza, skoro i tak sie nie zarazaja
+        # gorzej jak sa w samochodzie razem, ale tutaj mozna dac zarazanie instant,
+        #  
+        # FUNCKJA WEZMIE WSZYSTKIE DROGI JAKIE SA
+        # I ZROBI TRASE, Policzy ile zajmie przejechanie,
+        # doda do osoby, ile jest wykluuczona z symulacji
+        # i ustawi jej polozenie na cel, t 
+        pass
 
 
     def move():
