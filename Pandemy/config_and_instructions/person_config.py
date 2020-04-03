@@ -1,0 +1,2 @@
+default_config = {"pid":None, "age":None, "infected":False, "symptoms":False, "home":None, "day_place":None, "day_plan_array":None, "time_in_place":0, "max_time_in_place":None,
+                    "time_infected":0, "infecting":False, "dirty":0, "death_chance":None}
