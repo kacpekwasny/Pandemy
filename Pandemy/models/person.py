@@ -63,11 +63,14 @@ class Person:
     def __repr__(self):
         return "pid: {}, age: {}, infected: {}, death chance: {}".format(self.pid, self.age, self.infected, self.death_chance)
 
-    
-
     def infect_in_radius(self, other):
-        if self.infected and away_from(self, otther)<:
-            if random()
+        # other zaraza sie od self,
+        # self nie zaraza sie od other
+        # zawsze trzeba puscic dwa self.infect_in_radius(other)
+        # i other.infect_in_radius(self)
+        if self.infected and away_from(self, otther) < disease_config["infection_radius"]:
+            if random()<disease_config["air_radius_spread_chance"]:
+                other.infected = True
 
     # kiedy bedziemy robili symulacje miejsc pracy itd 
     def move(self, **options):

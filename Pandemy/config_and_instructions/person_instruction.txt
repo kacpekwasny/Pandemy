@@ -26,9 +26,11 @@ default_config = {"pid":None, "age":None,
                     #
                     # OD tego co tam jest bedzie zalezalo gdzie osoba bedzie
                     # chodzila w dni, i co bedzie przeprowadzalo jej symulacje
+                    
                 "day_plan_array":None,
                     # gdzie bedzie chodziła, funkcja w person bedzie generowala
                     # plan dnia w zaleznosci od
+
                 "time_in_place":0, "max_time_in_place":None,
                     # time_in_place to bedzie do wykorzystania podczas symulacji
                     # w day_palce i innych obiektach, aby kontrolowac czas siedzenia, a stania itd

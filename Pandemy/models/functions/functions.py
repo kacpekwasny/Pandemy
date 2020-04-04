@@ -14,6 +14,7 @@ def full_config(conf, def_conf):
     return ret
 
 def away_from(_self, other):
+    # returns how far is other
     ox, oy = other.cords
     sx, sy = _self.cords
     l = sqrt((ox-sx)**2 + (oy-sy)**2)
