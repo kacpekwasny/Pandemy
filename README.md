@@ -1,2 +1,4 @@
 # Pandemy
-One major town and nearby terrain epidemy simulation in python.
+### Simulation of an epidemy written in python.
+
+## In progress...
