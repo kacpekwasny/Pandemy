@@ -41,3 +41,24 @@ default_config = {"pid":None, "age":None,
                     # obiekcie, czas suma nie moze przekraczac
                     # twoj obiekt musi byc w stanie odzcytac te informacje i dac person
                     # odpowiednie komendy aby aby zrobila zadania z tej listy
+
+
+
+# Chance wszędzie jest w procentach wyrażone np.: 0.5 = 0.5%, 1.2 = 1.2%, 56 = 56%
+disease_config = {"infection_radius":2.0,
+                    # promień w którym osoby mają jakąś szanse zarazić się bez kontaktu
+                    # fizycznego
+                
+                "air_radius_spread_chance":0.5,
+                    # szansa na zarazenie się będąc w promieniu zarażania,
+                
+                "infection_from_dirty_hands":5.0,
+                    # po dotkinęciu zakożaonego przedmiotu,
+                    # przy każdej turze jest taka szansa na zostanie zainfekowanym
+                    # resetuje się przy umyciu rąk                
+                
+                "infection_from_dirty":2.0,
+                    # szansa na zainfekowanie się od brudnego ubrania
+                
+                "chance_infecting_clothes_radius":1}
+                    # szansa na zainfekowanie ubrań
