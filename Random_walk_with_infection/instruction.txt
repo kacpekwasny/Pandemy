@@ -1,0 +1,10 @@
+Random walk.
+Mo¿na mieæ wizualne przedstawienie, ale nie poci¹gnie za du¿o obiektów,
+dla wiêkszych wizualizacji nale¿y wy³¹czyæ turtle.
+ 
+Ustawienia:
+ - w³/wy³ turtle
+ |- w³/wy³ pendown dla turtle
+ 
+ - generuj home i work dla ludzi aby
+   ³azili doœæ przypadkowo miêdzy nimi
