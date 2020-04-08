@@ -13,9 +13,19 @@ def full_config(conf, def_conf):
             ret.update([(i, z)])
     return ret
 
-def away_from(_self, other):
+def away_from(_self, _other):
+    # takes object or (x, y)
+    # object has to have .cords
     # returns how far is other
-    ox, oy = other.cords
-    sx, sy = _self.cords
+    try:
+        sx, sy = _self.cords
+    except:
+        sx, sy = _self
+
+    try:
+        ox, oy = _other.cords
+    except:
+        ox, oy = _other
+
     l = sqrt((ox-sx)**2 + (oy-sy)**2)
     return l

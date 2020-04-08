@@ -64,3 +64,22 @@ disease_config = {"infection_radius":2.0,
                 
                 "chance_infecting_clothes_radius":1}
                     # szansa na zainfekowanie ubrań
+
+
+# config do tuningowania funkcji move
+move_config = {"chnc_chng" = 0.4,
+                # sznsa na zmiane kierunku,
+
+            "crct_turn" = 0.6, 
+                # minimalna szansa na skrecenie w kierunku celu
+
+            "chnc_fast_chng":0.999, 
+                # szansa na zawrócenie, czyli pomnozenie predkosci przez -1
+
+            "move_radius":0.01}
+                # Jest uzywany do tego aby kontrolowac funkcje która zajmuje się
+                # ustawianiem szansy zmiany kierunku na poprawny, ta wartosc 
+                # dostosowuje odleglosc od celu do stosunku do wielkości mapy
+                # arctan() mapuje (0 - nieskonczonsć) do (0; 1.57..)
+                # wiec zeby za szybko nie przybrała dużej wartości jest pomniejszana
+                # wlasnie przez "move_radius"
